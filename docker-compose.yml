@@ -1,0 +1,14 @@
+version: "2.1"
+
+networks:
+  default:
+
+services:
+  api:
+    build: ./api/
+    container_name: "api"
+    image: "api"
+    ports:
+      - "4000:4000"    
+    networks:
+      - default

@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "13f77adf-c062-4e5a-94c9-daf1c8bc032f",
+		"name": "Elixir Boilerplate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Incomplete",
+			"description": "",
+			"item": [
+				{
+					"name": "POST /users/forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}{{VERSION}}/users",
+							"host": [
+								"{{BASE_URL}}{{VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /users/resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}{{VERSION}}/users",
+							"host": [
+								"{{BASE_URL}}{{VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /users/sendToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}{{VERSION}}/users",
+							"host": [
+								"{{BASE_URL}}{{VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /users/validateToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}{{VERSION}}/users",
+							"host": [
+								"{{BASE_URL}}{{VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /users/logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}{{VERSION}}/users",
+							"host": [
+								"{{BASE_URL}}{{VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST /users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/login",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get /users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteWFwaSIsImV4cCI6MTUzMTcyNTEzNCwiaWF0IjoxNTI5MTMzMTM0LCJpc3MiOiJteWFwaSIsImp0aSI6IjAxZWFlZmU4LWQ4MmUtNGMzMi04NmQwLTMxYmViMGNlMmJmYiIsIm5iZiI6MTUyOTEzMzEzMywic3ViIjoiYzUxNTgwYWMtNDZkMi00MDI3LWI0NTktZTZiODljYTFmNjRmIiwidHlwIjoiYWNjZXNzIn0.6u94KJZvDTlbTH-JC0vNJYESku93_cDd5P_RzCx1ZB7tuYorGJ5w4TX4UpZOM_r5aG_kUaVhH2TJQm_WHPed8Q"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get /users/me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteWFwaSIsImV4cCI6MTUzMTcyNTEzNCwiaWF0IjoxNTI5MTMzMTM0LCJpc3MiOiJteWFwaSIsImp0aSI6IjAxZWFlZmU4LWQ4MmUtNGMzMi04NmQwLTMxYmViMGNlMmJmYiIsIm5iZiI6MTUyOTEzMzEzMywic3ViIjoiYzUxNTgwYWMtNDZkMi00MDI3LWI0NTktZTZiODljYTFmNjRmIiwidHlwIjoiYWNjZXNzIn0.6u94KJZvDTlbTH-JC0vNJYESku93_cDd5P_RzCx1ZB7tuYorGJ5w4TX4UpZOM_r5aG_kUaVhH2TJQm_WHPed8Q"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"firstName\": \"Eric\",\n\t\t\"lastName\": \"Dobyns\",\n\t\t\"email\": \"ericdobyns@gmail.com\",\n\t\t\"password\": \"123\",\n\t\t\"password_confirmation\": \"123\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/me",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get /users/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteWFwaSIsImV4cCI6MTUzMTcyNTEzNCwiaWF0IjoxNTI5MTMzMTM0LCJpc3MiOiJteWFwaSIsImp0aSI6IjAxZWFlZmU4LWQ4MmUtNGMzMi04NmQwLTMxYmViMGNlMmJmYiIsIm5iZiI6MTUyOTEzMzEzMywic3ViIjoiYzUxNTgwYWMtNDZkMi00MDI3LWI0NTktZTZiODljYTFmNjRmIiwidHlwIjoiYWNjZXNzIn0.6u94KJZvDTlbTH-JC0vNJYESku93_cDd5P_RzCx1ZB7tuYorGJ5w4TX4UpZOM_r5aG_kUaVhH2TJQm_WHPed8Q"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name_first\": \"Eric\",\n\t\"name_last\": \"Dobyns\",\n\t\"email\": \"ericdobyns@gmail.com\",\n\t\"password\": \"Password3\",\n\t\"password_confirmation\": \"Password3\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/c51580ac-46d2-4027-b459-e6b89ca1f64f",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"c51580ac-46d2-4027-b459-e6b89ca1f64f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /users/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteUFwaSIsImV4cCI6MTUyOTgxMzE1MCwiaWF0IjoxNTI3MzkzOTUwLCJpc3MiOiJteUFwaSIsImp0aSI6IjVlYTM1MDg4LTQyNGUtNDVhOC04Mzg2LWE5NGMxODc0NmYyNSIsIm5iZiI6MTUyNzM5Mzk0OSwic3ViIjoiMDU4ZTE4NmMtOTFkMi00NjRjLTgxODMtYjZiNTdlYzk5ZjA1IiwidHlwIjoiYWNjZXNzIn0.UBBP1m849E89HjnvgrQt7S_xRyCSSJMN6T7kWbP3TuNYeibXvdIfcmWfRCR9MXCEl17L1dZ4c-s16zQ6Y8jdMA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"username\": \"edobyns\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/058e186c-91d2-464c-8183-b6b57ec99f05",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"058e186c-91d2-464c-8183-b6b57ec99f05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /users/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteUFwaSIsImV4cCI6MTUyOTgxMzE1MCwiaWF0IjoxNTI3MzkzOTUwLCJpc3MiOiJteUFwaSIsImp0aSI6IjVlYTM1MDg4LTQyNGUtNDVhOC04Mzg2LWE5NGMxODc0NmYyNSIsIm5iZiI6MTUyNzM5Mzk0OSwic3ViIjoiMDU4ZTE4NmMtOTFkMi00NjRjLTgxODMtYjZiNTdlYzk5ZjA1IiwidHlwIjoiYWNjZXNzIn0.UBBP1m849E89HjnvgrQt7S_xRyCSSJMN6T7kWbP3TuNYeibXvdIfcmWfRCR9MXCEl17L1dZ4c-s16zQ6Y8jdMA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"name_first\": \"Woo\",\n\t\t\"name_last\": \"Dobyns\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/058e186c-91d2-464c-8183-b6b57ec99f05",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"058e186c-91d2-464c-8183-b6b57ec99f05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /users/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJteUFwaSIsImV4cCI6MTUyOTgxMzU5MSwiaWF0IjoxNTI3Mzk0MzkxLCJpc3MiOiJteUFwaSIsImp0aSI6IjZkODc4MDVhLWMyNzctNDhiMi05ZjdkLWNmYjRhODFlZTc5YiIsIm5iZiI6MTUyNzM5NDM5MCwic3ViIjoiOGE0MDBhZTUtYTUxMi00ODg0LTliYzktNzViNjg2ZWI5MGExIiwidHlwIjoiYWNjZXNzIn0.FihR4AMobJmwWR5Hu30NR7kyCeeKjrgkhnUuFiy3HEVQK2FXr4VUOnnPgW8m4ou_NZeDam-UXD7QMbfdO1gytQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{BASE_URL}}{{VERSION}}/users/de57d4ce-bd16-44c1-9c51-74995f9a65e9",
+					"host": [
+						"{{BASE_URL}}{{VERSION}}"
+					],
+					"path": [
+						"users",
+						"de57d4ce-bd16-44c1-9c51-74995f9a65e9"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ca630fb6-7466-4b37-9939-0117a7c0f1bc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8170f48b-801d-49bb-bb2f-ef3b09818196",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "6c4a0a2d-9217-42bf-8265-c66c6fc8b610",
+			"key": "BASE_URL",
+			"value": "http://localhost:4000/api",
+			"type": "string",
+			"description": ""
+		},
+		{
+			"id": "69aad6f5-5773-4497-a81b-9dae61f2b24c",
+			"key": "VERSION",
+			"value": "/v1",
+			"type": "string",
+			"description": ""
+		}
+	]
+}

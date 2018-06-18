@@ -1,0 +1,7 @@
+FROM elixir:1.6.5
+RUN mix local.hex --force
+COPY . .
+RUN mix deps.get
+RUN mix ecto.create
+RUN mix ecto.migrate
+CMD mix phx.server
